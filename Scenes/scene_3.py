@@ -9,31 +9,31 @@ def play_scene():
     """
 
     print("\n=== SCENE 3 ===")
-    print("Section A: [Describe the environment or situation for scene 3]")
+    print("Section A: You're now on the boat, rowing without somewhere in sight - hoping to get away.\
+          You suddenly realize you're starving, you look around for food or drink but come up empty.")
     
-    choice_a = input("You can 'look around' or 'call out': ").lower().strip()
+    choice_a = input("Do you try risking going in the water and catching a fish(1)\
+                  or Do you try eating the moss on your boat(2)?").lower().strip()
 
-    if choice_a == "look around":
-        print("You carefully examine your surroundings...")
+    if choice_a == 1:
+        print("You go in the freezing water and find a school or little, vulnerable fish - easy to catch.\
+            You take a handful of them and are forced to to eat them raw, but atleast you're not starving")
         # Placeholder logic
-    elif choice_a == "call out":
-        print("You shout to see if anyone—or anything—responds...")
+    elif choice_a == 2:
+        print("You eat the moss on your boat, despite it tasting disgusting, but atleast you're not starving")
         # Placeholder logic
-    else:
-        print("You stand still, unsure of what to do.")
     
     print("\n--- Moving to Section B of Scene 3 ---")
-    print("Section B: [Provide a second scenario or decision in scene 3]")
+    print("Section B: A storm hits your boat. Youu have choice but to sit through it, rendered helpless.")
     
-    choice_b = input("Do you 'hide' or 'push forward'? ").lower().strip()
+    choice_b = input("Do you continue rowing(1), or rest till the storm passes through(2)? ").lower().strip()
 
-    if choice_b == "hide":
-        print("You find a small nook and hide yourself...")
+    if choice_b == 1:
+        print("The boat starts to fill with water, sinking. You have to continue to the island by swimming.")
         return "scene_4"
-    elif choice_b == "push forward":
-        print("You choose to push forward, determined to find answers...")
+    elif choice_b == 2:
+        print("Suddenly, a giant octupus crashes into your boat, destroying it completly.\
+            You have to continue to the island by swimming")
         return "scene_4"
-    else:
-        print("Uncertain action. Eventually, you decide to keep going.")
-        return "scene_4"
+    
 
