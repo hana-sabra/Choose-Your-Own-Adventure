@@ -24,19 +24,22 @@ def play_scene():
         print("Invalid choice. Let's assume you explore anyway.")
 
     print("\n--- Moving to Section B of Scene 1 ---")
-    print("Section B: [The man is threating you with his gun, he looks furious andd crazy.he asks  'who are you' as you feel feel the distrust in his voice.]")
-    
+    print("Section B: [As you look around, a rugged man suddenly steps out from the trees, pointing a gun at you. His clothes are torn, and his eyes wild. He snarls, 'Who are you?!']")
+
     # Example of a second choice for Section B
-    choice_b = input("Do you 'confront' the strange  or 'attack' him? ").lower().strip()
-    
+    choice_b = input("Do you 'confront' the stranger or 'attack' him? ").lower().strip()
+
     if choice_b == "confront":
-        print("You answer his questions but, he doesn't look like he would trust you")
-        # Decide the next scene
+        print("You raise your hands, trying to calm things down. 'I'm lost,' you say cautiously. The man eyes you suspiciously but gestures with the gun.")
+        print("'Back to the camp. Now.' You don’t argue.")
         return "scene_2"
+
     elif choice_b == "attack":
-        print("You try to buy yourself time to do something by answering his questions and acting dumb then  that you saw in the distance animal makes a sounds you take this disattraction to your advantage and attack him ")
-        # Possibly go to a different scene or move forward
+        print("You feint to the side, ready to fight, but he’s faster than you expected. 'Nice try,' he grunts, then jerks his head. 'To the camp. Move.'")
+        print("With no better option, you follow him through the trees toward the camp.")
         return "scene_2"
+
     else:
-        print("Not sure what that means. Let's assume you follow the noise anyway.")
+        print("Unclear response. The man growls and motions with his weapon. 'Enough. Move it.' You’re led back to the camp in tense silence.")
         return "scene_2"
+
